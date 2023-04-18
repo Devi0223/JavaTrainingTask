@@ -1,0 +1,14 @@
+--19. Display the Empno, Ename, Salary of all Managers.
+
+	SELECT EMPNO,ENAME,SAL FROM EMP WHERE JOB = 'MANAGER'; 
+
+--20. Define a variable representing the expression used to calculate on emps total annual remuneration use the variable in a statement which finds all emps who can earn 30000 a year or more.
+
+------Using variable
+
+	select EMPNO,ENAME,SAL,(&ss*12) annualsal from emp where (&ss*12)  >=30000;
+
+
+--------- without Variable
+
+	select ename,sal,(sal*12) from emp where (sal*12) >= 30000;
