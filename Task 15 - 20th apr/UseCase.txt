@@ -1,0 +1,18 @@
+Singleton Use Case:
+
+ 
+
+For a JDBC driver or any DB with one connection is seems to be a singleton as it makes only one connection to access the thread that invokes.
+------------------------------------------------------------------------------------------------------------------------------------------------
+Prototype Use Case:
+
+ 
+
+In SP call we will get the result for DB that we get as a orginal copy and make use of that in our adapter file to modifiy as needed according to our requirement in order to avoid the DB call again for the same SP output.
+------------------------------------------------------------------------------------------------------------------------------------------------
+Builder Use Case:
+
+ 
+
+The same SP is called in both UI and API. But the differece is in UI it is to do with HTML and CSS to projecting out in Display, whereas in API is to frame the responce according to the request based for the different app that consumes.
+------------------------------------------------------------------------------------------------------------------------------------------------
